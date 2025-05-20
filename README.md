@@ -31,8 +31,6 @@ The project involves designing a normalized schema, inserting data, and solving 
 
 ## EER Diagram
 
-![image](https://github.com/user-attachments/assets/d12bd0e1-359b-42ad-af7e-06ed473127aa)
-
 ---
 
 ## 🧪 Sample Data
@@ -46,14 +44,23 @@ Includes 20 events across 2024 and 5 managers with a realistic mix of short and 
 - Lists events that exceed the **average event duration**.
 - Shows duration and how many days above average.
 
+![image](https://github.com/user-attachments/assets/6e79171a-1853-43e5-9738-53c7eaa17c17)
+
+
 ### 2.  Managers Overseeing Events on the Same Day
 - For each event day, shows:
   - Number of **distinct managers**
   - **List of events** held on that date
 
+![image](https://github.com/user-attachments/assets/2028d4c6-6b27-41da-ad27-4259a78c94f2)
+
+
 ### 3.  Managers NOT Managing Events Between May–July 2024
 - Lists managers with **no events between 2024-05-01 and 2024-07-31**
 - Includes **event count managed outside** this date range
+
+![image](https://github.com/user-attachments/assets/1d73efb2-22f3-4a21-aef2-20b3a7c630fd)
+
 
 ### 4.  Event Duration Categories
 - Categorizes events as:
@@ -61,14 +68,21 @@ Includes 20 events across 2024 and 5 managers with a realistic mix of short and 
   - **Medium** (3–5 days)
   - **Long** (>5 days)
 
+![image](https://github.com/user-attachments/assets/ddba7421-4543-411d-8f36-eecf9eb7426c)
+
+
 ### 5.  Total Event Days per Manager
 - Calculates how many **total event days** each manager is responsible for.
+
+![image](https://github.com/user-attachments/assets/56a05c6f-c7e7-4d41-9a51-3bf753f57d19)
 
 ### 6.  Managers Managing Multiple Events in the Same Month
 - Identifies managers overseeing **2+ events in the same month**
 
 ### 7.  Events Not Assigned to Any Manager
 - Lists events that have **no manager assigned**
+
+
 
 ---
 
@@ -177,5 +191,19 @@ group by m.manager_id, m.name;
    select  e.event_name, em.manager_id from events as e left join event_manager as em using(event_id)
    where em.manager_id is  null
    ;
-   
+   ```
+
+
+## Author
+### — Sudeshna Dey
+###  — Contact & Contributions
+
+#### 📧 Email: sudeshnadey1000@gmail.com
+#### 🔗 LinkedIn: https://www.linkedin.com/in/sudeshna-dey-724a811a0/
+ Have feedback or suggestions? I'm always open to improving and collaborating!
+ 
+If you find this project helpful:
+⭐ Give it a star
+Thanks for visiting — and happy data analyzing!
+
 
