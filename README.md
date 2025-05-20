@@ -1,12 +1,12 @@
-# 🗂️ Event Management SQL Project
+# 📅 Event Management SQL EDA Project
 
-## 📌 Overview
+## 📌 Project Overview
 
-This project demonstrates advanced SQL querying techniques on an event management database. It models real-world scenarios where organizations track events, assign managers, and analyze event durations, workloads, and scheduling patterns.
+This project performs **Exploratory Data Analysis (EDA)** on an event management system using **MySQL**. The analysis focuses on event durations, manager assignments, and event scheduling patterns. The database includes information about events, their scheduled dates, and the managers overseeing them.
 
-The project involves designing a normalized schema, inserting data, and solving analytical business queries using **MySQL**.
+The goal is to extract meaningful insights such as average event durations, manager workloads, scheduling conflicts, and unassigned events using **advanced SQL queries** including CTEs, joins, date functions, and aggregation.
 
----
+
 
 ## 🛠 Tech Stack
 
@@ -30,6 +30,8 @@ The project involves designing a normalized schema, inserting data, and solving 
 ---
 
 ## EER Diagram
+
+![image](https://github.com/user-attachments/assets/966b6a7e-8d08-4458-84f3-af33e4ad8289)
 
 ---
 
@@ -193,6 +195,18 @@ group by m.manager_id, m.name;
    ;
    ```
 
+### 📈 Key Insights
+--  Certain events last well above the average duration and can be resource-intensive.
+
+--  Some managers consistently handle multiple events in the same month, indicating scheduling load.
+
+--  Several dates have multiple managers working simultaneously, useful for staffing analysis.
+
+--  A few events are unassigned, which might lead to gaps in execution planning.
+
+--  Most events are categorized as Short or Medium, helping with resource planning.
+
+--- 
 
 ## Author
 ### — Sudeshna Dey
