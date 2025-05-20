@@ -92,6 +92,9 @@ Includes 20 events across 2024 and 5 managers with a realistic mix of short and 
    from cte
    where  difference > avg_duration 
    ;
+
+![image](https://github.com/user-attachments/assets/0b521953-9ff6-41b4-a894-ed012042d6e2)
+
    
  -- Managers Overseeing Events on the Same Day
    
